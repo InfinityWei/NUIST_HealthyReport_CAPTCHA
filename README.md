@@ -1,5 +1,5 @@
 # NUIST_HealthyReport
-## NUIST健康打卡    By Infinity.
+## NUIST健康打卡
 
 基于GitHub项目：https://github.com/dsus4wang/NUIST_AutoDailyHealthReport 大量修改而来，无需手动抓包修改FormData，操作更简单。
 
