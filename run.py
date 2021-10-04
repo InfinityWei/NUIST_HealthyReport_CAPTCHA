@@ -48,12 +48,26 @@ def getIpdp(username, password):
          'lt': '',
          'execution': execution,
      }
+     r = requests.get("https://authserver.nuist.edu.cn/authserver/checkNeedCaptcha.htl?username=" + username)
+     if r.text == '{"isNeed":true}':
+       print("CAPTCHA required")
+       print("Initializing OCR...")
+       import muggle_ocr
+       os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
+       print("Obtaining CAPTCHA...")
+       res = s.get("https://authserver.nuist.edu.cn/authserver/getCaptcha.htl")
+       print("Solving CAPTCHA...")
+       sdk = muggle_ocr.SDK(model_type = muggle_ocr.ModelType.Captcha)
+       captcha_text = sdk.predict(image_bytes = res.content)
+       print("CAPTCHA:", captcha_text)
+       data["captcha"] = captcha_text
+       print("Logging in...")
      r2 = s.post(url, data=data, cookies=cookies,
                  headers=header, timeout=5, allow_redirects=False)
      targetCookie = r2.cookies.get_dict()['iPlanetDirectoryPro']
      print(targetCookie)
      return(targetCookie)
-
+     
 # 运行前检查服务器正常吗
 print(time.strftime('%Y-%m-%d %H:%M:%S'))
 print('检查学校服务器状态...')
