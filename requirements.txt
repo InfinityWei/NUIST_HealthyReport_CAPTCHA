@@ -1,3 +1,10 @@
 PyExecJS==1.5.1
 lxml==4.6.2
 beautifulsoup4==4.9.3
+opencv_python
+tensorflow
+requests
+numpy
+Pillow
+pycryptodome
+PyYAML
