@@ -29,7 +29,7 @@ password = '请修改此处为密码'
 安装Python依赖opencv_python tensorflow requests PyExecJS lxml beautifulsoup4 numpy Pillow pycryptodome PyYAML
 
 ```powershell
-pip install opencv_python tensorflow requests PyExecJS lxml beautifulsoup4 numpy Pillow pycryptodome PyYAML
+pip install -r requirements.txt
 ```
 
 CMD或者PowerShell进入目录
