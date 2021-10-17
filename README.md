@@ -28,16 +28,16 @@ password = '请修改此处为密码'
 
 系统需安装好Python3.8以上，pip
 
-安装Python依赖opencv_python tensorflow requests PyExecJS lxml beautifulsoup4 numpy Pillow pycryptodome PyYAML
-
-```powershell
-pip install -r requirements.txt
-```
-
 CMD或者PowerShell进入目录
 
 ```powershell
 cd E:\Desktop\DailyHealthReport
+```
+
+安装Python依赖opencv_python tensorflow requests PyExecJS lxml beautifulsoup4 numpy Pillow pycryptodome PyYAML
+
+```powershell
+pip install -r requirements.txt
 ```
 
 py运行run.py文件
