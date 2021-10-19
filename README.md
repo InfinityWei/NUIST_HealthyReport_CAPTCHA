@@ -43,7 +43,7 @@ pip install -r requirements.txt
 py运行run.py文件
 
 ```powershell
-py run.py
+python run.py
 ```
 
 ### Linux系统
