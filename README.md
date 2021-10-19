@@ -1,11 +1,11 @@
 # NUIST_HealthyReport_CAPTCHA
 ## NUIST健康打卡带验证码版
 
-基于GitHub项目：https://github.com/dsus4wang/NUIST_AutoDailyHealthReport 大量修改而来，无需手动抓包修改FormData，操作更简单。
+基于GitHub项目：https://github.com/dsus4wang/NUIST_AutoDailyHealthReport 大量修改而来，支持验证码识别，无需手动抓包修改FormData，操作更简单。
 
 ### 2021-10-4更新
 
-利用muggle_ocr初步解决了学校统一认证添加强制验证码的逻辑，现可正常登陆填报
+利用muggle_ocr初步解决了近期学校统一认证添加强制验证码的逻辑，现可正常登陆填报
 
 验证码识别基于南京大学校园网登陆脚本项目：https://github.com/cubiccm/NJU-Network-Authenticate
 
@@ -34,7 +34,7 @@ CMD或者PowerShell进入目录
 cd E:\Desktop\DailyHealthReport
 ```
 
-安装Python依赖opencv_python tensorflow requests PyExecJS lxml beautifulsoup4 numpy Pillow pycryptodome PyYAML
+安装Python依赖，需要的依赖都已经列在requirements.txt里
 
 ```powershell
 pip install -r requirements.txt
