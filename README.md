@@ -3,6 +3,10 @@
 
 基于GitHub项目：https://github.com/dsus4wang/NUIST_AutoDailyHealthReport 大量修改而来，支持验证码识别，无需手动抓包修改FormData，操作更简单。
 
+### 2022-3-16更新
+
+系统更换本版本失效，如需新版请移步：https://github.com/InfinityWei/NUIST_HealthyReport_NEW
+
 ### 2021-10-4更新
 
 利用muggle_ocr初步解决了近期学校统一认证添加强制验证码的逻辑，现可正常登陆填报
