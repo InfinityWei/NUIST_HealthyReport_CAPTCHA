@@ -1,6 +1,8 @@
 # NUIST_HealthyReport_CAPTCHA
 ## NUIST健康打卡带验证码版
 
+**由于政策调整，本项目已完成其历史使命，不再具有任何实际用途，感谢大家的Commits和Stars**
+
 基于GitHub项目：https://github.com/dsus4wang/NUIST_AutoDailyHealthReport 大量修改而来，支持验证码识别，无需手动抓包修改FormData，操作更简单。
 
 ### 2022-3-16更新
